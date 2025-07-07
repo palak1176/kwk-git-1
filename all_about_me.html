@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>    
+<link href="all_about_me.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<h1 class="h1">All About Me!</h1>
+<h2 class="h2">Palak Mor</h2>
+<div class="container">
+<img src = "profile_pic.jpg">
+<p class="paragraph1">Hi, I am Palak! I am from Cumming, Georgia. I am currently a data collection and 
+    structuring intern at Syensqo, a multinational material science company. I am super excited to start 
+    at Georgia Tech to pursue a major in industrial engineering with a concentration in data analytics 
+    and science this fall! Some of my hobbies include listening to music, hanging out with my friends and
+    taking pictures on our digicams, diamond painting, and playing card games.</p>    
+</div>
+
+<div class="container2">
+<a href="https://www.instagram.com/palak_mor/"> You can check out the pictures my friends and I take 
+    on my Instagram!</a> 
+<a href="https://treyhunner.com/2015/06/cabo-card-game/">One of my favorite card games is Cabo! 
+    Everyone has a slightly different way of playing but here is one version.</a>
+    </div>    
+
+<h1 class="h1">My Coding Journey!</h1>
+
+<p class="paragraph1">Hover on top of the boxes to see more details!</p>
+
+<div class="container1">
+<div class="box">
+<h2 class="h2">Summer 2024</h2>
+    <h3 class="h3">Kode With Klossy: Web Development Camp</h3>
+        <p class="paragraph">I learned how to code in HTML, CSS, and JavaScript and then worked with a team 
+        of 4 peers to design and develop a minimum viable product (MVP) for a website offering resources 
+        and guidance on stress management using the skills I learned during the camp! </p>
+        </div>
+
+<div class="box">    
+<h2 class="h2">Spring 2025</h2> 
+    <h3 class="h3">CS1301: Introduction to Computing</h3>
+        <p class="paragraph">I took CS1301 through Georgia Tech's Distance Learning program and learned 
+            the basics of Python such as functions, conditionals, error handling, and file input/output. </p>
+            </div>
+
+<div class="box">            
+<h2 class="h2">Summer 2025</h2> 
+    <h3 class="h3">Kode With Klossy: Data Storytelling Challenge</h3>
+        <p class="paragraph">Since I am interested in working with data in the future, I figured this 
+            program would be a great fit and I am so happy I applied! I have already learned so much 
+            about GitHub and Command Line, things I had heard so much about but was always too overwhelmed 
+            to explore.</p>
+            </div>
+</div>
+
+<h1 class="h1">Let's Play 2 Truths and 1 Lie!</h1>
+
+<p class="paragraph1">Click on the one you think is the lie!</p>
+
+<div class="container2">
+<button class="button">I can make an upside-down heart with my tongue.</button>
+<button class="button">I can't tell my lefts from rights.</button>
+<button class="button">I was born in India and am an Indian citizen.</button>
+</div>
+
+<script>
+  // Get all the buttons
+  const buttons = document.querySelectorAll('.button');
+
+  // Add event listeners
+  buttons.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+      if (index === 0) {
+        btn.style.backgroundColor = 'lightgreen';
+        btn.textContent = 'Nope, this is true! It is one of my useless talents.';
+        } else if (index === 2) {
+        btn.style.backgroundColor = 'lightcoral';
+        btn.textContent = 'You found the lie! I was born in India but I became a naturalized US citizen last summer.';
+        } else if (index === 1) {
+        btn.style.backgroundColor = 'lightgreen';
+        btn.textContent = 'Nope, this is true! I have to use the L hand trick to differentiate my lefts and rights.'
+        }
+    });
+  });
+</script>
+
+ 
+</body>
+</html>

@@ -1,0 +1,111 @@
+html {
+    background-color:rgb(211, 229, 238)
+}
+
+
+.h1 {
+    color:crimson;
+    font-size: xx-large;
+    font-family:'Trebuchet MS';
+    text-align: center;
+}
+
+.h2 {
+    font-family: 'Trebuchet MS';
+    color: green;
+    text-align: center;
+}
+
+.h3 {
+    font-family: 'Trebuchet MS';
+    color: rgb(24, 78, 179);
+    text-align: center;
+
+}
+
+.paragraph1 {
+    font-family:'Segoe UI';
+    text-align: center;
+    font-size: large;
+}
+
+/* formatting for links */
+a {
+    border: 2px dashed black;
+    padding: 1%;
+    font-family:'Trebuchet MS';
+    color: rgb(12, 12, 109);
+    text-align: center;
+}
+
+/* formatting for paragraph in coding journey boxes */
+.paragraph {
+    font-family:'Segoe UI';
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    height: 0;
+    overflow: hidden;
+    }
+
+.box {
+    border: 2px solid black;
+    margin: 2%;
+    background-color: rgb(245, 239, 220);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 1%;
+    width: 30%;
+    min-width: 200px;
+    min-height: 200px;
+    transition: min-height 0.3s ease;  
+}
+
+.box:hover .paragraph {
+    opacity: 1;
+    height: auto
+}
+
+ .container1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+/* coding for picture and bio */
+ .container {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    margin: 2%;
+    justify-content: space-around;
+ }
+
+/* border for profile picture  */
+.container img {
+    border: 2px dotted black 
+}
+
+.button {
+    border: 2px solid black;
+    margin: 2%;
+    background-color: rgb(245, 239, 220);
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;
+    align-items: center; 
+    padding: 1%;
+    font-family: 'Segoe UI';
+    font-size: large; 
+}
+
+/* coding 2 truths and a lie*/
+ .container2 {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    margin: 2%;
+    justify-content: space-around;
+ }
